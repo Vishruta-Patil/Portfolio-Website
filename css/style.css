@@ -862,7 +862,7 @@ display: flex;
 }
 
 .portfolio-item{
-    width: calc((100% / 2) - 30px);
+    width: calc((100%/2) - 30px);
     margin: 0 15px 30px;
 }
 
@@ -973,6 +973,10 @@ display: flex;
     text-transform: lowercase;
     color: var(--main-color);
 }
+
+/* .view-project-btn{
+    margin-bottom:38px;
+} */
 
 .blog-item{
     width:calc(100%);
