@@ -587,7 +587,7 @@ display: flex;
 .home-img .img-box img {
     width: 72%;
     max-width: 95%;
-    margin:20px 50px 50px;
+    margin:20px 36px 50px;
 }
 
 .home-text span:before{
@@ -1038,7 +1038,7 @@ display: flex;
     .home-text,
     .home-img {
         width:100%;
-        margin-left: -22px;
+        margin-left: -15px;
     }
     .home-text{
         text-align: center;
@@ -1056,6 +1056,7 @@ display: flex;
         width: calc(50% - 30px);
     }
 }
+
 
 @media (max-width:767px) {
     .contact-form,
@@ -1129,6 +1130,11 @@ display: flex;
         width:100%;
         border-radius: 10px;
         
+    }
+    .home-box,
+    .home-img {
+        width:100%;
+        margin-left: -22px;
     }
 }
 
