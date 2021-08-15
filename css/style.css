@@ -1037,7 +1037,8 @@ display: flex;
     }
     .home-text,
     .home-img {
-        width:100%
+        width:100%;
+        margin-left: -22px;
     }
     .home-text{
         text-align: center;
