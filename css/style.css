@@ -980,7 +980,7 @@ display: flex;
 
 .blog-item{
     width:calc(100%);
-    margin:0 60px 80px;
+    margin:0 146px 80px;
     padding: 0 60px;
 }
 
@@ -1055,6 +1055,9 @@ display: flex;
     .portfolio-item {
         width: calc(50% - 30px);
     }
+    .blog-item {
+    margin:0 40px 80px;
+    }
 }
 
 
@@ -1068,6 +1071,10 @@ display: flex;
     .about-text{
         margin: 20px;
         margin-top: 30px;
+    }
+    .about-text h3 {
+        text-align: center;
+        font-size: 27px;
     }
     .about-text p{
         margin: 10px;
@@ -1099,6 +1106,12 @@ display: flex;
     .blog-item-thumbnail img {
         width:100%;
         border-radius: 10px;  
+    }
+}
+
+@media (max-width:550px) {
+    .about-text p {
+        font-size: 16px;
     }
 }
 
@@ -1136,6 +1149,9 @@ display: flex;
         width:100%;
         margin-left: -22px;
     }
+    .blog-item-title{
+        font-size: 20px;
+    }
 }
 
 @media (max-width:438px) 
@@ -1152,5 +1168,12 @@ display: flex;
     }
     .contact-form{
         margin-top: 20px;
+    }
+    .about-text .skills {
+        font-size:15px;
+    }
+    .view-project-btn,
+    .blog-item button a {
+        font-size: 16px;
     }
 }
