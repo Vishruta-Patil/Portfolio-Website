@@ -1008,6 +1008,13 @@ display: flex;
     font-size: 18px;
 }
 
+.flex {
+    display: flex;
+    gap: 100px;
+    margin-left: 20px;
+}
+
+
 
 @media (max-width:1032px) {
     .about-text{
@@ -1176,4 +1183,8 @@ display: flex;
     .blog-item button a {
         font-size: 16px;
     }
+    .flex {
+        gap: 60px;
+    }
 }
+
