@@ -1,0 +1,81 @@
+.home-section {
+  padding: 120px 0;
+}
+
+.home-section.active {
+  display: flex;
+}
+
+.home-section .container {
+  margin-left: 50px;
+}
+
+.home-text,
+.home-img {
+  width: 50%;
+  padding: 15px;
+}
+
+.home-text p {
+  font-size: 18px;
+}
+
+.home-text h1 {
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.home-text h2 {
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: 300;
+  margin: 0 0 30px;
+}
+
+.home-text .btn {
+  margin: 0 15px 15px 0;
+}
+
+.home-img .img-box {
+  max-width: 360px;
+  margin: auto;
+  background-color: var(--white-alpha-25);
+  max-width: 360px;
+  border: 8px solid var(--white-alpha-25);
+  margin: auto;
+  border-radius: 50px;
+}
+
+.home-img .img-box img {
+  width: 72%;
+  max-width: 95%;
+  margin: 20px 36px 50px;
+}
+
+.home-text span:before {
+  content: "";
+  animation: animate infinite 9s;
+  color: gray;
+  font-weight: 500;
+}
+
+@keyframes animate {
+  0% {
+    content: "Full Stack Web Developer";
+  }
+  10% {
+    content: "Full Stack Web Developer";
+  }
+  35% {
+    content: "FrontEnd Developer";
+  }
+  60% {
+    content: "BackEnd Developer";
+  }
+  85% {
+    content: "Open Source Contributor";
+  }
+  100% {
+    content: "Programmer";
+  }
+}

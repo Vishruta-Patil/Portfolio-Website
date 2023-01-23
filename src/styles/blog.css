@@ -1,0 +1,28 @@
+.blog-item {
+    width: calc(100%);
+    margin: 0 146px 80px;
+    padding: 0 60px;
+  }
+  
+  .blog-item-thumbnail {
+    padding: 65px;
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    border-radius: 10px;
+  }
+  
+  .blog-item-thumbnail img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .blog-item-title {
+    font-size: 25px;
+    text-transform: capitalize;
+    margin: 20px 0;
+  }
+  
+  .blog-item button a {
+    color: var(--main-color);
+    font-size: 18px;
+  }

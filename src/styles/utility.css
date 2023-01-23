@@ -1,0 +1,183 @@
+a {
+    text-decoration: none;
+  }
+  
+  h1,
+  h2 {
+    font-weight: 600;
+  }
+  
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 500;
+  }
+  
+  img {
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  section {
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    min-height: 90vh;
+    border-radius: 30px;
+    backdrop-filter: var(--backdrop-filter-blur);
+    /* display: none; */
+  }
+  
+  section.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  
+  .fade-out {
+    animation: fadeOut 0.5s ease-in-out forwards;
+  }
+
+  
+  section.fade-out {
+    animation: fadeOut 0.5s ease-in-out forwards;
+  }
+  
+  .main {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .main.fade-out {
+    opacity: 0;
+  }
+  
+  .container {
+    padding: 0 40 px;
+    width: 100%;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .align-items-center {
+    align-items: center;
+  }
+  
+  .home-section .container {
+    margin-left: 50px;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  .flex-end {
+    justify-content: flex-end;
+  }
+  
+  .sec-padding {
+    padding: 80px 0px;
+  }
+  
+  .section-title {
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section-title h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: var(--white);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+  }
+  
+  button {
+    font-family: inherit;
+    user-select: none;
+  }
+  
+  .btn {
+    line-height: 1.5;
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    padding: 10px 28px;
+    display: inline-block;
+    border-radius: 30px;
+    color: var(--main-color);
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: inherit;
+    font-size: 18px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    transition: width 0.3s ease;
+  }
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background-color: var(--main-color);
+    z-index: -1;
+    transition: width 0.3s ease;
+  }
+  
+  .btn:hover::before {
+    width: 100%;
+  }
+  
+  .btn:hover {
+    color: var(--white);
+  }
+
+  body.hide-scrolling {
+    overflow-y: hidden;
+  }
+
+ /* .hide-scrolling {
+    overflow-y: hidden;
+  } */
+  
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
